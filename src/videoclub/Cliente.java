@@ -38,6 +38,11 @@ public class Cliente {
         
         return false;
     }
+
+    @Override
+    public String toString() {
+        return "Cliente{" + "dni=" + dni + ", nombre=" + nombre + '}';
+    }
     
     
     

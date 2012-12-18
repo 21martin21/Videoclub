@@ -15,7 +15,7 @@ public class Acciones {
     private static ArrayList<Pelicula> peliculas = new ArrayList<Pelicula>();
     private static ArrayList<Cliente> clientes = new ArrayList<Cliente>();
     
-    public Pelicula create(String titulo, String genero, String año){
+    static public Pelicula createpelicula(String titulo, String genero, String año){
         Pelicula nueva = new Pelicula();
         nueva.setTitulo(titulo);
         nueva.setGenero(genero);
@@ -23,7 +23,7 @@ public class Acciones {
         peliculas.add(nueva);     
         return nueva;
     }
-    public Cliente create(String dni, String nombre){
+    static public Cliente createcliente(String dni, String nombre){
         Cliente nueva = new Cliente();
         nueva.setDni(dni);
         nueva.setNombre(nombre);

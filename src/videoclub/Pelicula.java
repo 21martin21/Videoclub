@@ -57,6 +57,11 @@ public class Pelicula {
     public void setIsRented(boolean isRented) {
         this.isRented = isRented;
     }
+
+    @Override
+    public String toString() {
+        return "Pelicula{" + "id=" + id + ", titulo=" + titulo + ", genero=" + genero + ", a\u00f1o=" + año + ", isRented=" + isRented + '}';
+    }
     
     
     
